@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # generator-website-app [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> 
+>
 
 ## Installation
 
@@ -37,6 +37,3 @@ MIT © [tutu]()
 [daviddm-url]: https://david-dm.org//generator-website-app
 [coveralls-image]: https://coveralls.io/repos//generator-website-app/badge.svg
 [coveralls-url]: https://coveralls.io/r//generator-website-app
-=======
-#generator-website-app
->>>>>>> 755f82701b9ab41cf05b4dede3b78cc68906f195
