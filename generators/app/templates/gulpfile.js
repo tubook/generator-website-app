@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
   clean = require('del'),
   gulpif = require('gulp-if'),
-  sass = require('gulp-sass'),
+  sass = require('gulp-ruby-sass'),
   uglify = require('gulp-uglify'),
   postcss = require('gulp-postcss'),
   // replace = require('gulp-replace'),

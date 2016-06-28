@@ -2,6 +2,7 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var mkdirp = require('mkdirp');
 var path = require('path');
 
 
@@ -70,12 +71,12 @@ module.exports = yeoman.Base.extend({
     //默认源目录就是生成器的templates目录，目标目录就是执行`yo example`时所处的目录。调用this.template用Underscore模板语法去填充模板文件
     this.template('package.json', 'package.json');
     this.template('gulpfile.js', 'gulpfile.js');
-    this.mkdir('src');
-    this.mkdir('src/images');
-    this.mkdir('src/js');
-    this.mkdir('src/scss');
-    this.mkdir('src/slice');
-    this.mkdir('src/view');
+    mkdirp('src');
+    mkdirp('src/images');
+    mkdirp('src/js');
+    mkdirp('src/scss');
+    mkdirp('src/slice');
+    mkdirp('src/view');
     this.copy('src/view/index.html', 'src/view/index.html');
     this.copy('src/scss/base.scss', 'src/scss/base.scss');
 
@@ -102,6 +103,7 @@ module.exports = yeoman.Base.extend({
   end: function() {
     var done = this.async();
     done();
+    this.log('工作流初始化完毕, 请 `npm install` 安装依赖.');
 
 
   }
