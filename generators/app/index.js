@@ -45,7 +45,6 @@ module.exports = yeoman.Base.extend({
       message: '项目版本:',
       default: this.version
     }];
-
     return this.prompt(prompts).then(function (props) {
       this.name = props.name;
       this.projectname = props.name;
@@ -75,6 +74,7 @@ module.exports = yeoman.Base.extend({
     mkdirp('src/scss');
     mkdirp('src/slice');
     mkdirp('src/view');
+    mkdirp('src/lib');
     this.copy('src/view/index.html', 'src/view/index.html');
     this.copy('src/scss/base.scss', 'src/scss/base.scss');
   },
